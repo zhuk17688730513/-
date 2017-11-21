@@ -1,0 +1,60 @@
+﻿<!doctype html>
+<html>
+<head design-width="750">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no"/>
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<meta name="format-detection" content="telephone=no">
+<title>注册页</title>
+<link rel="stylesheet" href="css/style.css" /><!--页面样式-->
+<link rel="stylesheet" href="css/common.css" /><!--常用样式-->
+<link rel="stylesheet" href="css/animate.min.css" /><!--CSS3动画库-->
+<script src="js/auto-size.js"></script><!--设置字体大小-->
+</head>
+<body>
+	<div class="mobile-wrap center ohei">
+        <div class="header">
+        	<a href="#" class="back"><img src="img/ico1.png" alt=""></a>
+        	<h1>注册</h1>
+        </div><!-- header -->
+        <div class="form dt">
+        	<ul>
+        		<li>
+        			<input type="text" placeholder="请输入您的昵称">
+        			<div class="right">
+        				<label class="fl acti"><input type="radio" name="1" id="" checked>先生</label>
+        				<label class="fr"><input type="radio" name="1" id="">女士</label>
+        			</div>
+        		</li>
+        		<li><input type="tel" placeholder="请输入您的手机号码" maxlength="11" onkeyup="this.value=this.value.replace(/\D/g,'')"></li>
+        		<li>
+        			<input type="tel" placeholder="输入手机验证码"onkeyup="this.value=this.value.replace(/\D/g,'')">
+        			<a href="#">获取短信验证码</a>
+        		</li>
+        		<li><input type="password" placeholder="设置6-20个字符、字母、数字组合方式" maxlength="20"></li>
+        		<li><input type="password" placeholder="再次输入密码" maxlength="20"></li>
+        	</ul>
+        	<div class="select">
+        		<label class="acti"><input type="radio" name="1" id="" checked>个人</label>
+        		<label><input type="radio" name="1" id="">信贷机构</label>
+        		<label><input type="radio" name="1" id="">信贷顾问</label>
+        	</div>
+        	<a class="loggin" href="#">提交注册</a>
+        	<div class="xy">
+        		<label>
+        			<input type="checkbox" name="" id="" checked>
+        			已阅读并同意<a href="#">比利欧服务协议</a>和<a href="#">管理条例</a>
+        		</label>
+        	</div>
+        </div><!-- form -->
+    </div><!--mobile_wrap-->
+</body>
+<script src="js/jquery-2.2.4.min.js"></script><!--jQ库-->
+<script src="js/swiper-3.3.1.jquery.min.js"></script><!--轮播库-->
+<script src="js/version-3.2.8.js"></script><!--封装函数-->
+<script>
+	click_addname(".form .right label","acti","");
+	click_addname(".select label","acti","");
+</script>
+</html>

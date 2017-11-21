@@ -1,0 +1,129 @@
+﻿<!doctype html>
+<html>
+<head design-width="750">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no"/>
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<meta name="format-detection" content="telephone=no">
+<title>抢单</title>
+<link rel="stylesheet" href="css/style.css" /><!--页面样式-->
+<link rel="stylesheet" href="css/common.css" /><!--常用样式-->
+<link rel="stylesheet" href="css/animate.min.css" /><!--CSS3动画库-->
+<script src="js/auto-size.js"></script><!--设置字体大小-->
+</head>
+<body>
+	<div class="mobile-wrap center bj">
+        <div class="header four">
+        	<h1>抢单</h1>
+        </div><!-- header -->
+        <div class="filter dt">
+            <div class="top">
+                <span class="s1">所有抢单<i><img src="img/ico23.png" alt=""></i></span>
+                <span class="s2"><a href="城市.html">全国<i><img src="img/ico23.png" alt=""></i></a></span>
+                <span class="s3"><a href="筛选.html">自定义筛选<i><img src="img/ico23.png" alt=""></i></a></span>
+            </div>
+            <div class="down">
+                <div class="box b1">
+                    <a href="#">所有抢单</a>
+                    <a href="#">已被抢单</a>
+                    <a href="#">未被抢单</a>
+                </div>
+            </div>
+        </div><!-- filter -->
+        <div class="people">
+            <ul>
+                <li>
+                    <div class="top">
+                        <strong>刘晓雯</strong>
+                        <span><b>5</b>千元</span>
+                        <span><b>2</b>年</span>
+                        <em>刚刚</em>
+                    </div>
+                    <div class="pie">
+                        <span>深圳</span>
+                        <span>上班族</span>
+                        <span>未知</span>
+                        <span>有车</span>
+                        <span>有房</span>
+                        <span>有保单</span>
+                    </div>
+                    <a href="#">90金币抢单</a>
+                </li>
+                <li>
+                    <div class="top">
+                        <strong>奥少新</strong>
+                        <span><b>5</b>千元</span>
+                        <span><b>2</b>年</span>
+                        <em>刚刚</em>
+                    </div>
+                    <div class="pie">
+                        <span>深圳</span>
+                        <span>上班族</span>
+                        <span>未知</span>
+                        <span>有车</span>
+                        <span>有房</span>
+                        <span>有保单</span>
+                    </div>
+                    <a href="#">90金币抢单</a>
+                </li>
+                <li>
+                    <div class="top">
+                        <strong>李淑萍</strong>
+                        <span><b>5</b>千元</span>
+                        <span><b>2</b>年</span>
+                        <em>刚刚</em>
+                    </div>
+                    <div class="pie">
+                        <span>深圳</span>
+                        <span>上班族</span>
+                        <span>未知</span>
+                        <span>有车</span>
+                        <span>有房</span>
+                        <span>有保单</span>
+                    </div>
+                    <a href="#">90金币抢单</a>
+                </li>
+            </ul>
+        </div><!-- people -->
+        <div class="null"></div><!-- null -->
+        <div class="footer fixed center">
+            <ul>
+                <li><a href="#"><div class="pic"><i><img src="img/ico7.png" alt=""></i></div>首页</a></li>
+                <li class="dk"><a href="#"><div class="pic"><i><img src="img/ico8.png" alt=""></i></div>贷款</a><div class="slide"><a href="#">申请贷款</a><a href="#">找商家</a><a href="#">找贷款</a></div></li>
+                <li class="acti"><a href="#"><div class="pic"><i><img src="img/ico9-1.png" alt=""></i></div>抢单</a></li>
+                <li><a href="#"><div class="pic"><i><img src="img/ico10.png" alt=""></i></div>交单</a></li>
+                <li><a href="#"><div class="pic"><i><img src="img/ico11.png" alt=""></i></div>我的</a></li>
+            </ul>
+        </div><!-- footer -->
+    </div><!--mobile_wrap-->
+</body>
+<script src="js/jquery-2.2.4.min.js"></script><!--jQ库-->
+<script src="js/swiper-3.3.1.jquery.min.js"></script><!--轮播库-->
+<script src="js/version-3.2.8.js"></script><!--封装函数-->
+<script>
+    click_addname(".filter .top span","acti","");
+    replaimg(".filter .top span");
+    $('.filter .top .s1').click(function(event) {
+        $('.filter .down .box').slideToggle();
+    });
+      $('.filter .down .box a').click(function(event) {
+          $('.filter .down .box').slideUp();
+      });
+     $('html').click(function(event) {
+        $('.filter .down .box').slideUp();
+        event.stopPropagation();
+    });
+    imgauto('.footer .pic i img')
+    click_addname(".footer ul li","acti","");
+    replaimg(".footer ul li");
+    $('.dk').click(function(event) {
+        $('.footer .slide').slideToggle();
+        event.stopPropagation();
+    });
+    $('body').click(function(event) {
+        $('.footer .slide').slideUp();
+        event.stopPropagation();
+    });
+</script>
+</html>

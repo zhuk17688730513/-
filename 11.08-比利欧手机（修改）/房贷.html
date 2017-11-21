@@ -1,0 +1,114 @@
+﻿<!doctype html>
+<html>
+<head design-width="750">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no"/>
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<meta name="format-detection" content="telephone=no">
+<title>房贷</title>
+<link rel="stylesheet" href="css/style.css" /><!--页面样式-->
+<link rel="stylesheet" href="css/common.css" /><!--常用样式-->
+<link rel="stylesheet" href="css/animate.min.css" /><!--CSS3动画库-->
+<script src="js/auto-size.js"></script><!--设置字体大小-->
+</head>
+<body>
+	<div class="mobile-wrap center bj">
+        <div class="banne">
+            <div class="header two">
+                <a href="#" class="back"><img src="img/ico1.png" alt=""></a>
+            <h1>房贷</h1>
+            </div><!-- header -->
+            <ul class="swiper-wrapper">
+                <li class="swiper-slide"><img src="img/pic20.jpg" alt=""></li>
+                <li class="swiper-slide"><img src="img/pic20.jpg" alt=""></li>
+                <li class="swiper-slide"><img src="img/pic20.jpg" alt=""></li>
+            </ul>
+            <div class="box">
+                <div class="cirl"> </div>
+            </div>
+        </div><!-- banne -->
+        <div class="bank dt">
+            <ul>
+                <li>
+                    <div class="pic"><img src="img/pic24.jpg" alt=""></div>
+                    <div class="text">
+                        <strong>华夏银行-房屋按揭贷款<span>银行入驻免费办理</span></strong>
+                        <p>新房、二手房都支持  </p>
+                        <p>审批时间：7天  放款时间：30天</p>
+                    </div>
+                    <a href="#">详情</a>
+                </li>
+                <li>
+                    <div class="pic"><img src="img/pic25.jpg" alt=""></div>
+                    <div class="text">
+                        <strong>恒生银行 - 房产按揭贷款</strong>
+                        <p>新房、二手房都支持  </p>
+                        <p>审批时间：7天  放款时间：30天</p>
+                    </div>
+                    <a href="#">详情</a>
+                </li>
+                 <li>
+                    <div class="pic"><img src="img/pic26.jpg" alt=""></div>
+                    <div class="text">
+                        <strong>渤海银行-房屋按揭贷款</strong>
+                        <p>新房、二手房都支持  </p>
+                        <p>审批时间：7天  放款时间：30天</p>
+                    </div>
+                    <a href="#">详情</a>
+                </li>
+                <li>
+                    <div class="pic"><img src="img/pic27.jpg" alt=""></div>
+                    <div class="text">
+                        <strong>邮政银行 - 房产按揭贷款</strong>
+                        <p>新房、二手房都支持  </p>
+                        <p>审批时间：7天  放款时间：30天</p>
+                    </div>
+                    <a href="#">详情</a>
+                </li>
+                 <li>
+                    <div class="pic"><img src="img/pic28.jpg" alt=""></div>
+                    <div class="text">
+                        <strong>招商银行 - 房产按揭贷款</strong>
+                        <p>新房、二手房都支持  </p>
+                        <p>审批时间：7天  放款时间：30天</p>
+                    </div>
+                    <a href="#">详情</a>
+                </li>
+            </ul>
+        </div><!-- bank -->
+        <div class="null"></div><!-- null -->
+        <div class="footer fixed center">
+            <ul>
+                <li><a href="#"><div class="pic"><i><img src="img/ico7.png" alt=""></i></div>首页</a></li>
+                <li class="dk acti"><a href="#"><div class="pic"><i><img src="img/ico8-1.png" alt=""></i></div>贷款</a><div class="slide"><a href="#">申请贷款</a><a href="#">找商家</a><a href="#">找贷款</a></div></li>
+                <li><a href="#"><div class="pic"><i><img src="img/ico9.png" alt=""></i></div>抢单</a></li>
+                <li><a href="#"><div class="pic"><i><img src="img/ico10.png" alt=""></i></div>交单</a></li>
+                <li><a href="#"><div class="pic"><i><img src="img/ico11.png" alt=""></i></div>我的</a></li>
+            </ul>
+        </div><!-- footer -->
+    </div><!--mobile_wrap-->
+</body>
+<script src="js/jquery-2.2.4.min.js"></script><!--jQ库-->
+<script src="js/swiper-3.3.1.jquery.min.js"></script><!--轮播库-->
+<script src="js/version-3.2.8.js"></script><!--封装函数-->
+<script>
+    downslide(".banne",".banne .cirl","","","");
+    imgauto('.term .pic i img')
+    tabs_cg(".piece .tags span",".item","click","acti","",0)
+    tabs_cg(".piece2 .tags span",".list3","click","acti","",0)
+    tabs_cg(".piece3 .tags span",".news","click","acti","",0)
+    imgauto('.footer .pic i img')
+    click_addname(".footer ul li","acti","");
+    replaimg(".footer ul li");
+    $('.dk').click(function(event) {
+        $('.footer .slide').slideToggle();
+        event.stopPropagation();
+    });
+    $('body').click(function(event) {
+        $('.footer .slide').slideUp();
+        event.stopPropagation();
+    });
+
+</script>
+</html>
